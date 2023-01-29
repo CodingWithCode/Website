@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    font-family: sans-serif;
+}
+.background{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('background.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 2% 6%;
+    z-index: 50;
+    width: 100%;
+    transition: 0.7s;
+}
+.logo-text{
+    color: white;
+    transition: 0.7s;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    transition: 0.7s;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #7393B3;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 30px;
+}
+
+.about{
+    width: 100%;
+    min-height: 90vh;
+    background-color: #4a90e2;
+    text-align: center;
+}
+.about-text{
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    padding: auto;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card1{
+    text-align: center;
+    width: 350px;
+    height: 525px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 12px;
+    border-radius: 16px;
+}
+.card1 p{
+    font-size: 25px;
+    padding: 2% 6%;
+    text-align: left;
+}
+
+.card2{
+    width: 350px;
+    height: 525px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 12px;
+    border-radius: 16px;
+}
+.card2 p{
+    font-size: 23px;
+    padding: 2% 6%;
+    text-align: center;
+}
+.card3{
+    width: 350px;
+    height: 525px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 12px;
+    border-radius: 16px;
+}
+.card3 p{
+    font-size: 22px;
+    padding: 2% 6%;
+    text-align: right;
+}
+.card1 h1{
+    padding: 2% 6%;
+    font-size: 50px;
+}
+
+.card2 h1{
+    padding: 2%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.card3 h1{
+    padding: 2% 10%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.projects{
+    width: 100%;
+    min-height: 80vh;
+    text-align: center;
+    background-color: #6082B6;
+}
+
+.projects-text{
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    padding-top: 20px;
+    color: aliceblue;
+}
+
+.project-cards{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.contacts-maker p{
+    font-size: 25px;
+}
+
+.contacts-maker a{
+    font-size: 25px;
+}
+.contacts-maker p i{
+    color: gray;
+}
+
+.contacts-maker img{
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.contacts-maker{
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+    background-color: aliceblue;
+    padding: 5px;
+}
+
+
+.contact{
+    width: 100%;
+    min-height: 50vh;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.contact-text{
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    padding-top: 20px;
+}
+
+.contact p{
+    font-size: 25px;
+}
+
+.contact img{
+    width: 100px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #f8f9fa;
+}
+
+.newsletter{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.toggle{
+    background-color: red;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    top: 800px;
+}
+
+#loader{
+    background-image: url('loading.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+}
