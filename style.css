@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    font-family: sans-serif;
+}
+.background{
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('background.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 2% 6%;
+    z-index: 50;
+    width: 100%;
+    transition: 0.7s;
+}
+.logo-text{
+    color: white;
+    transition: 0.7s;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    transition: 0.7s;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #7393B3;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 30px;
+}
+
+.about{
+    width: 100%;
+    min-height: 90vh;
+    background-color: #4a90e2;
+    text-align: center;
+}
+.about-text{
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    padding: auto;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card1{
+    text-align: center;
+    width: 350px;
+    height: 525px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 12px;
+    border-radius: 16px;
+}
+.card1 p{
+    font-size: 25px;
+    padding: 2% 6%;
+    text-align: left;
+}
+
+.card2{
+    width: 350px;
+    height: 525px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 12px;
+    border-radius: 16px;
+}
+.card2 p{
+    font-size: 23px;
+    padding: 2% 6%;
+    text-align: center;
+}
+.card3{
+    width: 350px;
+    height: 525px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 12px;
+    border-radius: 16px;
+}
+.card3 p{
+    font-size: 22px;
+    padding: 2% 6%;
+    text-align: right;
+}
+.card1 h1{
+    padding: 2% 6%;
+    font-size: 50px;
+}
+
+.card2 h1{
+    padding: 2%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.card3 h1{
+    padding: 2% 10%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.projects{
+    width: 100%;
+    min-height: 80vh;
+    text-align: center;
+    background-color: #6082B6;
+}
+
+.projects-text{
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    padding-top: 20px;
+    color: aliceblue;
+}
+
+.project-cards{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.contacts-maker p{
+    font-size: 25px;
+}
+
+.contacts-maker a{
+    font-size: 25px;
+}
+.contacts-maker p i{
+    color: gray;
+}
+
+.contacts-maker img{
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.contacts-maker{
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+    background-color: aliceblue;
+    padding: 5px;
+}
+
+
+.contact{
+    width: 100%;
+    min-height: 50vh;
+    background-color: rgb(248, 249, 250);
+    text-align: center;
+}
+
+.contact-text{
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    padding-top: 20px;
+}
+
+.contact p{
+    font-size: 25px;
+}
+
+.contact img{
+    width: 100px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #f8f9fa;
+}
+
+#loader{
+    background-image: url('loading.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+}
+
+.modal-container {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+    z-index: 100;
+    overflow: auto;
+}
+
+.modal-container.show {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modal {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	padding: 30px 50px;
+	text-align: center;
+	width: 600px;
+    height: 500px;
+    overflow: auto;
+}
+
+#close {
+    background-color: #47A386;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	color: #fff;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px 25px;
+}
+
+.m {
+    font-size: 75px;
+}
+
+#open {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(248, 254, 250);
+    /* (248, 249, 250); */
+    border: none !important;
+}
+
+@media screen and (max-width: 1055px) {
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#open-nav {
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+#close-nav {
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width: 619px) {
+    #open-nav {
+        display: block;
+        cursor: pointer;
+    }
+
+    #close-nav {
+
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: rgb(21, 16, 28);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 10000;
+        transition: 1s;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+
+    .card1{
+        text-align: center;
+    }
+    .card2{
+        text-align: center;
+    }
+    
+    .card3{
+        text-align: center;
+    }
+}
