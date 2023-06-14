@@ -14,6 +14,7 @@ function scrollFunction() {
             document.querySelector(".nav-element2").style.color = "black";
             document.querySelector(".nav-element3").style.color = "black";
             document.querySelector(".nav-element4").style.color = "black";
+            document.querySelector(".nav-element5").style.color = "black";
             document.getElementById("close-nav").style.color = "black";
         }
         document.getElementById("open-nav").style.color = "black";
@@ -25,6 +26,7 @@ function scrollFunction() {
             document.querySelector(".nav-element2").style.color = "white";
             document.querySelector(".nav-element3").style.color = "white";
             document.querySelector(".nav-element4").style.color = "white";
+            document.querySelector(".nav-element5").style.color = "white";
             document.getElementById("close-nav").style.color = "white";
         }
         document.getElementById("open-nav").style.color = "white";
