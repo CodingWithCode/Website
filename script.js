@@ -9,7 +9,7 @@ function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.querySelector(".navbar").style.backgroundColor = "rgba(255,255,255)";
         document.querySelector(".logo-text").style.color = "black";
-        if (window.innerWidth >630) {
+        if (window.innerWidth > 630) {
             document.querySelector(".nav-element1").style.color = "black";
             document.querySelector(".nav-element2").style.color = "black";
             document.querySelector(".nav-element3").style.color = "black";
