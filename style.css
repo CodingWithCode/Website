@@ -299,6 +299,54 @@ nav {
     border: none !important;
 }
 
+.blog-page{
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('background.gif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.title-box{
+    text-align: center;
+    min-width: 100%;
+    min-height: 23vh;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-box h1{
+    padding-top: 2%;
+    color: white;
+    font-size: 50px;
+}
+
+.title-box p{
+    color: white;
+    font-size: 25px;
+}
+
+hr{
+    margin: auto;
+    width: 100px;
+    border: 2px solid rgb(100, 149, 237);
+    border-radius: 10px;
+}
+
+ul li h1{
+    color: white;
+    font-size: 45px;
+}
+
+ul li p{
+    color: white;
+    font-size: 25px;
+}
+
 @media screen and (max-width: 1055px) {
     .cards{
         display: flex;
