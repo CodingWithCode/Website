@@ -337,6 +337,10 @@ hr{
     border-radius: 10px;
 }
 
+ul li{
+    padding-bottom: 80px;
+}
+
 ul li h1{
     color: white;
     font-size: 45px;
