@@ -330,7 +330,28 @@ nav {
     font-size: 25px;
 }
 
-hr{
+.hr-about{
+    margin: auto;
+    width: 100px;
+    border: 2px solid orange;
+    border-radius: 10px;
+}
+
+.hr-projects{
+    margin: auto;
+    width: 100px;
+    border: 2px solid mistyrose;
+    border-radius: 10px;
+}
+
+.hr-blog{
+    margin: auto;
+    width: 100px;
+    border: 2px solid rgb(100, 149, 237);
+    border-radius: 10px;
+}
+
+.hr-contact{
     margin: auto;
     width: 100px;
     border: 2px solid rgb(100, 149, 237);
